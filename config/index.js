@@ -28,11 +28,11 @@ export const USER_CONFIG = {
     
     /** 每日N句 */
     // 金山每日一句
-    CIBA: true,
+    CIBA: false,
     // 每日一言
     oneTalk: false,
     // 土味情话(彩虹屁)
-    earthyLoveWords: false,
+    earthyLoveWords: ture,
     // 朋友圈文案
     momentCopyrighting: false,
     // 毒鸡汤
@@ -41,7 +41,7 @@ export const USER_CONFIG = {
     poetry: false,
     
     /** 星座运势 */
-    horoscope: false,
+    horoscope: ture,
     
     /** 生日消息和节日消息 */
     birthdayMessage: true,
@@ -60,9 +60,9 @@ export const USER_CONFIG = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: "老婆0",
+      name: "鱼",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "oCx-a5vH3IsiWJ4mrROHOFJqhnRU",
+      id: "oCx-a5gB9NjHc1K4eeBVSIcZraKw",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "EPWekKjXR2iP2_8x8UjzLs26UOcTsmX5v1njWWLvRFI",
       // 所在省份
@@ -70,7 +70,7 @@ export const USER_CONFIG = {
       // 所在城市
       city: "宁波",
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '06-29',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -78,33 +78,33 @@ export const USER_CONFIG = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09"},
-        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+        {"type": "*生日", "name": "鱼宝", "year": "1997", "date": "07-26"},
+        //{"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        {"type": "生日", "name": "小严", "year": "1997", "date": "07-05"},
+        //{"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        {"keyword": "love_day", date: "2022-09-08"},
+        {"keyword": "love_day", date: "2016-11-11"},
         // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
+        //{"keyword": "marry_day", date: "2022-09-09"},
         // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+        //{"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: "严",
+      id: "oCx-a5vH3IsiWJ4mrROHOFJqhnRU",
+      useTemplateId: "EPWekKjXR2iP2_8x8UjzLs26UOcTsmX5v1njWWLvRFI",
+      province: "浙江",
+      city: "宁波",
+      horoscopeDate: '07-05',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [{"type": "*生日", "name": "鱼宝", "year": "1997", "date": "07-26"},{"type": "生日", "name": "小严", "year": "1997", "date": "07-05"},],
+      customizedDateList: [{"keyword": "love_day", date: "2016-11-11"},]
     },
     {
       name: "老婆2",
