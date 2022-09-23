@@ -62,7 +62,7 @@ export const USER_CONFIG = {
       // 想要发送的人的名字
       name: "鱼",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "oCx-a5vH3IsiWJ4mrROHOFJqhnRU",
+      id: "oCx-a5gB9NjHc1K4eeBVSIcZraKw",
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "enl9mFALDjWSnfyLbqZiLaBtUhfVXpEX9gBvEGqEIPU",
       // 所在省份
@@ -89,16 +89,20 @@ export const USER_CONFIG = {
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: "严",
+      id: "oCx-a5vH3IsiWJ4mrROHOFJqhnRU",
+      useTemplateId: "enl9mFALDjWSnfyLbqZiLaBtUhfVXpEX9gBvEGqEIPU",
+      province: "浙江",
+      city: "宁波",
+      horoscopeDate: '07-5',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "鱼宝", "year": "1997", "date": "06-29"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "小严", "year": "1997", "date": "07-05"},],
+      customizedDateList: [ {"keyword": "love_day", date: "2016-11-11"},]
     },
     {
       name: "老婆2",
