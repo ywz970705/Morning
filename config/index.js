@@ -99,7 +99,7 @@ export const USER_CONFIG = {
       openUrl: "https://wangxinleo.cn",
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "鱼宝", "year": "1997", "date": "06-29"},
+        {"type": "生日", "name": "鱼宝", "year": "1997", "date": "06-29"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "小严", "year": "1997", "date": "07-05"},],
       customizedDateList: [ {"keyword": "love_day", date: "2016-11-11"},]
